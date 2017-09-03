@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+body {
+    background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/40DD/production/_93050661_1024-pubcollection-103.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1 {
+   font-family:'Lato', serif;
+   text-align: center;
+   font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background: rgba(241, 243, 241, 0.65);
+}
+
+.jumbotron h1 {
+    color: #3A3E3b);
+}
+ul {
+   list-style: none;
+}
+li {
+   font-family:'Raleway', serif;
+   font-size: 20px;
+   color: #EA4E5B;
+}
+input[type=radio] {
+   border: 0px;
+   width: 20px;
+   height: 15px;
+   display: inline-block;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 20px 0px;
+    
+}
+p {
+   font-family:'Raleway', serif;
+}
+/* Quiz Classes */
+.quizContainer {
+   background-color: rgb(245, 251, 246);
+   border-radius: 6px;
+   width: 85%;
+   margin: auto;
+   position: relative;
+}
+.nextButton {
+   box-shadow: 3px 3px 5px #888;
+   border-radius: 6px;
+   width: 150px;
+   height: 40px;
+   text-align: center;
+   background-color: #3A3E3B;
+   /*clear: both;*/
+   color: rgb(245, 251, 246);
+   font-family:'Raleway', serif;
+   position: relative;
+   margin: 0px auto;
+   padding-top: 10px;
+}
+
+.nextButton:hover {
+    background: rgba(58, 62, 59, 0.95);
+}
+.question {
+   font-family:'Lato', serif;
+   font-weight: light;
+   font-size: 21px;
+   height: auto;
+   margin: auto;
+   background-color: #3A3E3B;
+   text-align: left;
+   color: rgb(245, 251, 246);
+   padding: 15px 40px;
+}
+.quizMessage {
+   background-color: rgb(245, 251, 246);
+   border: 1px solid #24ACB4;
+   width: 30%;
+   margin: 10px auto;
+   text-align: center;
+   padding: 2px;
+   font-family:'Raleway', serif;
+   color: #24ACB4;
+}
+.choiceList {
+   font-family: Courier, serif;
+   color: blueviolet;
+}
+.result {
+   background-color: rgb(245, 251, 246);
+   color: red;
+   padding: 10px 10px;
+   width: 30%;
+   height: auto;
+   border-radius: 6px;
+   margin: auto;
+   text-align: center;
+   font-family:'Raleway', serif;
+}
+
+#guessYear {
+    color:#177479
+}
+
+.startBG {
+    background: rgba(241, 243, 241, 0.65);
+    margin: 20px 10px;
+    padding: 20px 20px;
+}
+
+.btn-primary {
+    background: #177479;
+    font-size: 20px;
+}
+
+.btn-primary:hover {
+    background: #115A5E;
+    font-size: 20px;
+}
+.colorbg {
+    background: red;
+}
+
+#theImg {
+    max-width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px 10px;
+}
+/* End of Quiz Classes */
+

@@ -1,0 +1,26 @@
+- Go over game logic and object programming 
+- How to add start function 
+- Passing in arguments in functions 
+- adding the timer
+
+
+- create onlick function to start. Then hide start button when clicked and append all html.
+
+- var startTime = 20;
+
+while (startTime > 0) {
+    setTimeout(function() { 
+        startTime --;
+        if (startTime === 0) {
+            alert("You Lost");
+        }
+    }, 1000);
+}
+
+function myFunction (response) {
+    var answer = response + 10;
+    console.log("This function");
+    
+}
+
+myFunction (20,8);
