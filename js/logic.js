@@ -61,7 +61,9 @@ function displayCurrentQuestion() {
 function resetQuiz() {
     currentQuestion = 0;
     correctAnswers = 0;
-    hideScore();  
+    stopTimer();
+    hideScore(); 
+
     
 }
 
@@ -76,7 +78,6 @@ function displayScore() {
     $(document).find(".quizContainer .result").text("You scored: " + correctAnswers + " out of: " + questions.length);
     $(document).find(".quizContainer .result").show();
     $(document).find("#theGif").show();
-    
 }
 
 // display countdown timer
@@ -97,13 +98,20 @@ function displayTimer(duration, display) {
             resetQuiz();
             displayCurrentQuestion();
             hideScore();
-            
         }
 
     }, 1000);
 }
 
+function stopTimer() {
+    
+// trying to setup a function to reset the timer once you click "Play again"
+    clearInterval(timer);
+    
+}
+
 function timerSetup() {
+
     // Adding 30 sec on the clock to ansewr the questions
     gameCountDown,
     display = $('#timer');
@@ -161,9 +169,10 @@ $(document).ready(function () {
                     } else {
                         displayScore();
                         imgGif();
-                        
+
                         $(document).find(".nextButton").text("Play Again?");
                         quizOver = true;
+                        stopTimer();
                     }
                 }
             }else { // quiz is over and clicked the next button (which now displays 'Play Again?'
